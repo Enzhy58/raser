@@ -87,3 +87,65 @@ body {
     }
 
 }
+
+.category {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $background;
+    padding: 8px 20px;
+    background-color: $white;
+    border-radius: 40px;
+
+}
+
+.slick-dots {
+    display: flex;
+    position: absolute;
+    line-height: 26px;
+    bottom: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+
+        button {
+            font-size: 0;
+            width: 15px;
+            height: 15px;
+            border: 1px solid $gray;
+            border-radius: 50%;
+        }
+
+        &.slick-active {
+
+            button {
+                border: none;
+                background-color: $accent;
+            }
+
+        }
+
+    }
+
+    li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    bottom: -6%;
+}
+
+.slick-prev {
+    left: 44%;
+}
+
+.slick-next {
+    right: 44%;
+}
