@@ -3,3 +3,77 @@
 @import 'reset';
 @import 'global';
 @import 'libs';
+
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 20px 0;
+    background-color: $background;
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.15em;
+            color: $gray;
+            line-height: 100%;
+            transition: color 0.3s;
+
+            &:not(:last-child) {
+                margin-right: 77px;
+            }
+
+            &:hover {
+                color: $white;
+            }
+
+        }
+
+    }
+
+}
+
+.search {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        left: 3%;
+        transform: translateY(-50%);
+        background-image: url("../images/icon/search.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &__field {
+        padding: 13px 13px 13px 44px;
+        max-width: 173px;
+        width: 100%;
+        background-color: $gray;
+        border-radius: 23px;
+
+        &::placeholder {
+            font-family: 'Oswald', sans-serif;
+            color: $background;
+            line-height: 100%;
+            letter-spacing: 0.15em;
+        }
+
+    }
+
+}
