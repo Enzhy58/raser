@@ -60,3 +60,30 @@ body {
     color: $accent;
     margin-bottom: 10px;
 }
+
+.social {
+    background-color: $background;
+
+    &__text {
+        display: block;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: $accent;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 58px;
+        }
+
+    }
+
+}
