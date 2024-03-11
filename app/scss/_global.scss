@@ -101,6 +101,15 @@ body {
 
 }
 
+.additionally {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
 .category {
     align-self: flex-start;
     font-size: 12px;
@@ -112,6 +121,11 @@ body {
     background-color: $white;
     border-radius: 40px;
 
+}
+
+.discount {
+    background-color: $blue;
+    color: $white;
 }
 
 .slick-dots {
@@ -156,9 +170,19 @@ body {
 }
 
 .slick-prev {
-    left: 44%;
+    left: auto;
+    right: 55%;
 }
 
 .slick-next {
-    right: 44%;
+    right: auto;
+    left: 55%;
+}
+
+.star {
+    display: flex;
+    &__img {
+        margin-right: 7px;
+    }
+    
 }
