@@ -399,3 +399,32 @@
     }
 
 }
+
+.reviews {
+    padding: 112px 0;
+    margin-bottom: 140px;
+
+    &__card {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__text {
+        max-width: 768px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__name {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        font-family: 'Oswald';
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        color: $name;
+        line-height: 130%;
+    }
+}
+
