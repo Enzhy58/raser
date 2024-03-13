@@ -549,7 +549,86 @@
 
 }
 
+.footer {
+    letter-spacing: 0.04em;
+    color: $gray;
 
+    &__items {
+        justify-content: space-between;
+    }
 
+    &__top {
+        padding-bottom: 40px;
+        border-bottom: 1px solid $gray;
+    }
 
+    &__top,
+    &__items {
+        display: flex;
+    }
 
+    &__box {
+        margin-right: 151px;
+    }
+
+    &__title {
+        font-family: 'Oswald';
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.15em;
+        color: $name;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+    }
+
+    &__bottom {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__bottom-list {
+        display: flex;
+    }
+
+    &__line {
+        position: relative;
+        padding-right: 10px;
+        margin-right: 10px;
+
+        &:not(:last-child) {
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 23px;
+                background-color: $gray;
+            }
+
+        }
+        
+    }
+
+    &__country {
+        font-family: 'Oswald';
+        font-weight: 700;
+        letter-spacing: 0.15em;
+    }
+
+    &__location {
+        padding-right: 34px;
+    }
+
+}
