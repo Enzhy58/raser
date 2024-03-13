@@ -403,6 +403,9 @@
 .reviews {
     padding: 112px 0;
     margin-bottom: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__card {
         display: flex;
@@ -430,12 +433,17 @@
 }
 
 .location {
+    padding-bottom: 140px;
 
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $gray;
     }
 
     &__list {
@@ -465,6 +473,7 @@
         font-weight: 700;
         letter-spacing: 0.05em;
         color: $name;
+        text-transform: uppercase;
         margin-bottom: 10px;
     }
 
@@ -479,4 +488,68 @@
     }
 
 }
+
+.subscribe {
+    padding-bottom: 140px;
+
+    &__wrapper {
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: 'Oswald';
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        color: $name;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        letter-spacing: 0.04em;
+        color: $name;
+        margin-bottom: 20px;
+    }
+
+    &__field {
+        max-width: 450px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: $name;
+        color: $background;
+        padding: 13px 20px;
+        margin: 0 20px 20px 0;
+
+        &::placeholder {
+            letter-spacing: 0.04em;
+            color: rgba($background, 0.4);
+        }
+    }
+
+    &__btn {
+        font-family: 'Oswald';
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 0.15em;
+        background-color: $background;
+        color: $name;
+        text-transform: uppercase;
+        border-radius: 50px;
+        padding: 13px 38px;
+    }
+
+    &__info {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        color: $name;
+    }
+
+}
+
+
+
+
 
