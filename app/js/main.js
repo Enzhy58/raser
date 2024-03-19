@@ -5,7 +5,7 @@ $(function () {
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icon/arrow-prev.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="images/icon/arrow-next.svg" alt=""></button>'
     });
-    $('.exclusive__list').slick({
+    $('.catalog').slick({
         slidesToShow: 4,
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="images/icon/arrow-prev.svg" alt=""></button>',

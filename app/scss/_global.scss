@@ -5,6 +5,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
+    letter-spacing: 4%;
 }
 
 .container {
@@ -27,6 +28,7 @@ body {
 }
 
 .btn {
+    display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -101,6 +103,41 @@ body {
 
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $gray;
+        letter-spacing: 0.04em;
+    }
+
+}
+
+.catalog {
+
+    .slick-dots,
+    .slick-prev,
+    .slick-next {
+        bottom: -10%;
+    }
+
+    .slick-prev {
+        right: 58%;
+    }
+
+    .slick-next {
+        left: 58%;
+    }
+
+}
+
 .additionally {
     font-size: 12px;
     font-weight: 600;
@@ -126,6 +163,11 @@ body {
 .discount {
     background-color: $blue;
     color: $white;
+}
+
+.unique {
+    background-color: $gold;
+    color: $background;
 }
 
 .slick-dots {
@@ -181,8 +223,9 @@ body {
 
 .star {
     display: flex;
+
     &__img {
         margin-right: 7px;
     }
-    
+
 }
