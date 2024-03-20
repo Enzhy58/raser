@@ -621,7 +621,8 @@
 
 }
 
-.collection {
+.collection,
+.cyberpunk {
     margin-bottom: 40px;
 
     &__inner {
@@ -649,5 +650,32 @@
         max-width: 450px;
         width: 100%;
         padding: 272px 0 40px 0;
+    }
+
+}
+
+.cyberpunk {
+    
+    &__info {
+        max-width: 450px;
+        width: 100%;
+        color: $background;
+    }
+
+    .title {
+        color: $background;
+    }
+
+    .title {
+
+        &::before {
+            background-color: $background;
+        }
+
+    }
+
+    .btn {
+        background-color: $background;
+        color: $white;
     }
 }
