@@ -636,3 +636,16 @@
     }
     
 }
+
+.watch {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+
+    &__inner {
+        max-width: 450px;
+        width: 100%;
+        padding: 272px 0 40px 0;
+    }
+}
