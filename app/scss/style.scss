@@ -202,14 +202,6 @@
         text-align: center;
     }
 
-    &__title {
-        margin-bottom: 40px;
-    }
-
-    &__text {
-        margin-bottom: 20px;
-    }
-
     &__btn {
         display: inline-block;
     }
@@ -623,8 +615,22 @@
         text-align: center;
     }
 
-    &__title,
-    &__text {
-        margin-bottom: 20px;
+}
+
+.collection {
+    margin-bottom: 40px;
+
+    &__inner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 56px 40px;
+        border-radius: 22px;
     }
+
+    &__info {
+        max-width: 322px;
+        width: 100%;
+    }
+    
 }

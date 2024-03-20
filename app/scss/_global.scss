@@ -120,6 +120,19 @@ body {
 
 }
 
+.shop-now {
+
+    &__title {
+        margin-bottom: 30px;
+        line-height: 130%;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+}
+
 .catalog {
 
     .slick-dots,
