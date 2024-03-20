@@ -679,4 +679,15 @@
         background-color: $background;
         color: $white;
     }
+
+}
+
+.audio-advantage {
+    margin-bottom: 40px;
+
+    &__inner {
+        padding: 272px 0 74px 0;
+        max-width: 670px;
+        width: 100%;
+    }
 }
