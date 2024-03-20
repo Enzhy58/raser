@@ -170,6 +170,12 @@ body {
     color: $background;
 }
 
+.new {
+    border: 1px solid $accent;
+    background-color: transparent;
+    color: $accent;
+}
+
 .slick-dots {
     display: flex;
     position: absolute;
