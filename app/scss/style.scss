@@ -690,4 +690,24 @@
         max-width: 670px;
         width: 100%;
     }
+
+}
+
+.about {
+    padding-top: 150px;
+    margin-bottom: 20px;
+
+    &__img {
+        border-radius: 23px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+
+        p {
+            margin-bottom: 20px;
+        }
+
+    }
+
 }
